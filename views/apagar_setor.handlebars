@@ -1,0 +1,14 @@
+<h1>Apagar Setor</h1>
+<form action="/apagar_setor" method="post">
+<label for="cod_setor">Digite o código do setor que você deseja apagar:</label>
+<input type="text" name="cod_setor" placeholder="Digite o código do setor"><br>
+<label for="nome_setor">Digite o nome do setor que você deseja apagar:</label>
+<input type="text" name="nome_setor" placeholder="Digite o nome do setor"><br>
+<br>
+<button type="submit">Apagar</button>
+</form>
+{{#if msg}}
+    <p>{{msg}}</p>
+{{else}}
+    <p>{{msg2}}</p>
+{{/if}}

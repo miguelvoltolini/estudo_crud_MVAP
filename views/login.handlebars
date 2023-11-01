@@ -1,0 +1,13 @@
+<h1>Fazer Login</h1>
+<br>
+<form action="/login" method="post">
+<input type="email" name="email" placeholder="Digite seu email"><br>
+<input type="password" name="senha" placeholder="Digite sua senha"><br>
+<br>
+<button type="submit">Enviar</button>
+</form>
+{{#if msg}}
+    <p>{{msg}}</p>
+{{else}}
+    <p>{{msg2}}</p>
+{{/if}}

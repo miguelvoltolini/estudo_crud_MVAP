@@ -1,0 +1,22 @@
+<h1>Atualizar Setor</h1>
+<br>
+<form action="/atualizar_setor" method="post">
+<h3>Configurações atuais do Setor</h3>
+<label for="nome_setor">Digite o atual nome do Setor:</label>
+<input type="text" name="nome_setor" placeholder="Digite o atual nome do Setor"><br>
+<label for="cod_setor">Digite o código do Setor:</label>
+<input type="text" name="cod_setor" placeholder="Digite o código do Setor"><br>
+<label for="gerenteId">Digite o ID do gerente</label>
+<input type="text" name="gerenteId" placeholder="Digite o ID do gerente"><br>
+<br>
+<h3>Novas Configurações do Setor</h3>
+<label for="novo_nome_setor">Digite o novo nome do Setor:</label>
+<input type="text" name="novo_nome_setor" placeholder="Digite o novo nome do Setor"><br>
+<br>
+<button type="submit">Atualizar</button>
+</form>
+{{#if msg}}
+    <p>{{msg}}</p>
+{{else}}
+    <p>{{msg2}}</p>
+{{/if}}

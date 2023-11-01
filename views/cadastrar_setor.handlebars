@@ -1,0 +1,15 @@
+<h1>Cadastrar Setor</h1>
+<br>
+<form action="/cadastrar_setor" method="post">
+<label for="cod_setor">Digite o código do setor</label>
+<input type="text" name="cod_setor" placeholder="Digite o código do setor"><br>
+<label for="nome_setor">Digite o nome do setor</label>
+<input type="text" name="nome_setor" placeholder="Digite o nome do setor"><br>
+<label for="gerenteId">Digite o ID do gerente</label>
+<input type="text" name="gerenteId" placeholder="Digite o ID do gerente"><br>
+<br>
+<button type="submit">Cadastrar</button>
+</form>
+{{#if msg}}
+    <p>{{msg}}</p>
+{{/if}}

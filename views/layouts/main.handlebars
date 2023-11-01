@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Início</title>
+</head>
+<body>
+    {{#if log}}
+    <header>
+        <nav>
+            <a>{{nomeGerente}}</a>
+            <a href="/sistema">Sistema</a>
+            <a href="/logout">Sair</a>
+        </nav>
+    </header>
+    {{else}}
+    <header>
+        <nav>
+            <a href="/">Home</a>
+        </nav>
+    </header>
+    {{/if}}
+    <main>
+        {{{body}}}
+    </main>
+    <footer>
+
+    </footer>
+</body>
+</html>
